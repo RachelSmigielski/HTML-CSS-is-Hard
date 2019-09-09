@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <title>Extras</title>
+    <meta charset='UTF-8'/>
+  </head>
+
+  <body>
+    <h1>Extras</h1>
+
+    <h2>Relative Links - Parent Folders</h2>
+    <p>This page is about miscellaneous HTML things, but you may also be interested in <a href='links.html'>links<a/> or <a href='images.html'>images</a>.</p>
+    <!--This doesn't work (Page not found) because it can't find the links: these files aren't in the same subfolder.-->
+    <p>This page is about miscellaneous HTML things, but you may also be interested in <a href='../links.html'>links<a/> or <a href='../images.html'>images</a>.</p>
+    <!--The ".." lets it know to go back to the parent folder.-->
+    <!--To go up multiple folders, use multiple references: ../../folder.html-->
+    <!--Relative links can get confusing if all your links start with a bunch of dots; best to use them when referencing resources in the same folder or in a standalone section of the website.-->
+
+    <h2>Character Sets</h2>
+
+    <p>You can use UTF-8 to count in Turkish:</p>
+
+    <ol>
+      <li>bir</li>
+      <li>iki</li>
+      <li>üç</li>
+      <li>dört</li>
+      <li>beş</li>
+    </ol>
+    <!--If open in Safari with no meta data, get a lot of weird stuff for the non-English symbols-->
+    <!--Had to add <meta charset='UTF-8'/> under <head> to fix it-->
+    <!--UTF-8 is sort of like a universal alphabet for the Internet. Every web page you create should have this line-->
+
+    <h2>HTML Entities</h2>
+    <p>There are a bunch of <a href='https://dev.w3.org/html5/html-author/charref' target='_blank'>HTML entities</a>.</p>
+
+    <h3>Reserved Characters</h3>
+    <p>There are three reserved characters in HTML: &lt; &gt; and &amp;. You should always use HTML entities for these three characters.</p>
+    <!--The following characters MUST use the HTML entity in order to be rendered as plain text: < (&lt;) > (&gt;) and & (&amp;)-->
+
+    <h3>Quotes</h3>
+    <p>Sometimes you want to use curly quotes instead of straight quotes.<br/>
+      There are 4 types of curly quotes:</p>
+      <ul>
+        <li>&ldquo;</li>
+        <li>&rdquo;</li>
+        <li>&lsquo;</li>
+        <li>&rsquo;</li>
+      </ul>
+
+      <p>If you&rsquo;re into &ldquo;web typography,&rdquo; you&rsquo;ll find yourself using curly quotes quite a bit.</p>
+
+  </body>
+</html>

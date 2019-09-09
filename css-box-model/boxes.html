@@ -1,0 +1,34 @@
+<!--CSS treats each element in your HTML document as a “box” with a bunch of different properties that determine where it appears on the page.-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Boxes Are Easy!</title>
+    <link rel="stylesheet" href="box-styles-clean.css"/>
+  </head>
+
+  <!--All the HTML elements that we’ve been working with have a default type of box.-->
+  <!--Block boxes always appear below the previous block element.-->
+  <!--The width of block boxes is set automatically based on the width of its parent container (like the browser window)-->
+  <!--The default height of block boxes is based on the content it contains. -->
+  <!--Inline boxes don’t affect vertical spacing. They’re not for determining layout—they’re for styling stuff inside of a block.-->
+  <!--The width of inline boxes is based on the content it contains, not the width of the parent element.-->
+  <!--We can override the default box type of HTML elements with the CSS display property.-->
+
+  <body>
+    <h1>Headings are Block Elements</h1>
+    <p>Paragraphs are blocks, too. <em>However</em>, &lt;em&gt; and &lt;strong&gt; elements are not. They are <strong>inline</strong> elements.</p>
+    <div style="padding-top: 1px"></div>
+    <!--This prevents vertical MARGIN collapse b/w the 2 paragraphs, b/c only CONSECUTIVE elements collapse
+    and padding doesn't ever collapse-->
+
+    <p>Block elements define the flow of the HTML document, while inline elements do not.</p>
+
+    <div>Button</div>
+    <!--Both <div> and <span> are “container” elements that don’t have any affect on the semantic structure of an HTML document.
+    They provide a hook for adding CSS styles to arbitrary sections of a web page.-->
+    <!--<div>is for block-level content and <span> is meant for inline content-->
+
+  </body>
+</html>

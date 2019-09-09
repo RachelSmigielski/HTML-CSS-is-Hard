@@ -1,0 +1,129 @@
+h1, p {
+  background-color: #DDE0E3; /*Light gray*/
+}
+em, strong {
+  background-color: #B2D6FF; /*Light blue*/
+  display: block;
+  /*The display property converts em and strong from inline elements to blocks;
+  This comes in handy when you’re trying to turn <a> elements into buttons or format <img/> elements*/
+}
+em, strong {
+  background-color: #B2D6FF; /*Light blue*/
+  display: inline;
+  /*This is the default for em and strong*/
+}
+
+/*The “CSS box model” is a set of rules that determine the dimensions of every element in a web page. There are 4 properties:
+    Content – The text, image, or other media content in the element.
+    Padding – The space between the box’s content and its border.
+    Border – The line between the box’s padding and margin.
+    Margin – The space between the box and surrounding boxes.*/
+
+h1 {
+  padding: 50px;
+}
+/*This added 50 pixels to each side of the heading (including the top and bottom)*/
+
+p {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+p {
+  padding: 20px 10px; /*Another way to write out the above*/
+}
+
+p {
+  padding: 20px 0 20px 10px; /*top right bottom left* padding*/
+}
+
+h1{
+  padding: 50px;
+  border-bottom: 1px solid #5D6063; /*gray*/
+  /*For the border: define the stroke width, the style, then the color*/
+}
+
+p{
+  padding: 20px 0 20px 10px;
+  margin-bottom: 50px;
+  /*margins accept the same shorthand formats as padding*/
+  /*The padding of a box has a background, while margins are always transparent.
+  Padding is included in the click area of an element, while margins aren’t.
+  Margins collapse vertically, while padding doesn’t(inline padding can extend beyong the block it's in, which is bad)*/
+}
+
+strong {
+  margin: 50px
+  /*Inline boxes completely ignore the top and bottom margins of an element
+  This is NOT the case for padding
+  If you want to play with the vertical space of a page, you must be working with block-level elements (remember can change an inline element to a block)*/
+}
+
+/*“Vertical margin collapse”: when you have two boxes with vertical margins sitting right next to each other, only the biggest one is displayed.*/
+p{
+  padding: 20px 0 20px 10px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+/*Aka there's not 75px between the top and bottom paragraphs: the top margin of the lower paragraph "collapses" into the begger margin
+There's only 50px total between them
+Think of the margins as the MINIMUM space b/w other elements*/
+/*To prevent Margin collapse, put an invisible element between them in the HTML
+Only CONSECUTIVE elements collapse, and padding doesn't ever collapse*/
+/*Could also just stick to a bottom-only or top-only margin convention*/
+
+div {
+  color: #FFF;
+  background-color: #5995DA;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid #5D6063;
+  border-radius: 5px;
+}
+
+
+/*Sometimes our desired layout calls for an explicit dimension, like a sidebar that’s exactly 250 pixels wide.
+For this, CSS provides the width and height properties
+This ony define's the box's content.*/
+
+div{
+  width: 200px
+}
+/*If button's title is longer, the element will expand vertically to accommodate the new content
+You can change this default behavior with the white-space and overflow properties*/
+
+div{
+  width: 200px
+  box-sizing: border-box;
+}
+/*This forces the entire box to be 200px, including padding and borders*/
+
+body {
+  text-align: center;
+}
+/*This only aligns the text in the block boxes, not the boxes themselves
+The <div> boxes are still left-aligned*/
+
+div{
+  color:#FFF;
+  background-color: #4A90E2;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+
+  width: 200px;
+  box-sizing: border-box;
+  margin: 20px auto;
+}
+/*The auto margin automaticlly centers the buttons (only works with blocks that have explicit width defined)*/
+
+
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/

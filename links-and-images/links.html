@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <title>Links</title>
+    <meta charset='UTF-8'/>
+  </head>
+
+  <body>
+    <h1>Links</h1>
+    <h2>Absolute, Relative, and Root-Relative Links</h2>
+    <p>This example is about links and <a>images</a>.</p>
+    <!--This is an "anchor" element which allows something to become a link-->
+    <!--an HTML “attribute” adds meaning to the element it’s attached to-->
+    <!--The href attribute determines where the user goes when they click an <a> element-->
+    <p>This example is about links and <a href='images.html'>images</a>.</p>
+
+    <p>This particular page is about links! There are three kinds of links:</p>
+
+    <ul>
+      <li>Absolute links, like to <a href='https://developer.mozilla.org/en-US/docs/Web/HTML'>Mozilla Developer Network</a>, which is a very good resource for web developers.</li>
+      <!--Absolute links are best for directing users to a different website-->
+      <li>Relative links, like to our <a href='misc/extras.html'>extras page</a>.</li>
+      <!--Relative links assume the scheme and domain are the same as the current page, so the only thing you need to supply is the path.-->
+      <!--Since extras.html is in a different subfolder, we need to include that in the path-->
+      <li>Root-relative links, like to the "homepage" of our website, but that doesn't work right now.</li>
+      <!--If use <a href='/'>homepage</a>, the link takes me to my computer directory and Google can see it (This would actually take me to my homepage if I was coding a webpage hosted on a real server.)-->
+      <!--Can then link to something like /images.html no matter where your current page is located (basically just start the file path with ""/""-->
+    </ul>
+
+    <h2>Link Targets</h2>
+    <p>Absolute links, like to <a href='https://developer.mozilla.org/en-US/docs/Web/HTML'target='_blank'>Mozilla Developer Network</a>, which is a very good resource for web developers.</p>
+    <!--target='_blank' means open the link in a new tab-->
+
+  </body>
+</html>

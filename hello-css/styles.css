@@ -1,0 +1,66 @@
+body {
+    color: #FF0000;
+}
+/*A CSS “rule” always start with a “selector” that defines which HTML elements it applies to.*/
+/* The curly braces are the declarations block */
+/* Color here is the property that will affect the body element.*/
+/* #FF0000 is the value of the color(in this case bright red)*/
+body {
+    color: #414141; /*dark gray*/
+    background-color: #EEEEEE; /*light gray*/
+    font-size: 18px
+}
+/*Don't forget the ; or the CSS rule will break*/
+/*It looks like if competing rules, it will go with the one further down the list*/
+
+h1{
+  font-size: 2em;
+}
+h2{
+  font-size: 1.6em;
+}
+/* Most common units of measurement: px (pixel) and em.
+The em unit is very useful for defining sizes relative to some base font.
+Our base font size for the document is 18px, then our <h1> elements should be twice that size and our <h2>’s should be 1.6 times bigger. */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Helvetica", "Arial", sans-sans-serif;
+  font-weight: normal;
+  font-style: italic;
+}
+/*Not all users have the same fonts. The browser tries to load the left-most first, then falls back to the others.*/
+/*font-weight determines the boldness; font-style the italics*/
+
+ul {
+  list-style-type: circle;
+}
+ol {
+  list-style-type: lower-roman;
+}
+/*"None" is also an option*/
+/*You can even create custom bullets for <li> elements with the list-style-image property (see MDN)*/
+
+a {
+  text-decoration: none;
+}
+/*Removes underline from links*/
+
+p {
+  text-align: left;
+}
+/*Only aligns the paragraphs (not the lists or headers); always aligns to entire page*/
+
+/*The CSS hierarchy for every web page looks like this:
+    The browser’s default stylesheet
+    User-defined stylesheets
+    External stylesheets (that’s us)
+    Page-specific styles (that’s also us)
+    Inline styles (that could be us, but it never should be)
+Aka - the lower styles override the upper*/
+
+/*Page-specific styles: The <style> element is used to add page-specific CSS rules to individual HTML documents.*/
+/*Inline styles also go on the HTML doc; they should be avoided at all costs because have to be updated manually if you ever want to re-style the website*/
+/*Can have one global stylesheet that is supplemented with section-specific stylesheets (e.g. one for blogs and a dif one for the online shop)
+Remember: stylesheets that come later will override styles in earlier ones*/
+
+/*Separating content from presentation allows us to apply different CSS rules to the same HTML content, depending on whether the user is on a mobile phone, tablet, or desktop computer*/

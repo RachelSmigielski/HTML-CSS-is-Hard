@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <title>Images</title>
+    <meta charset='UTF-8'/>
+  </head>
+
+  <body>
+    <h1>Images</h1>
+    <!--the <img/> tag (empty element) with the "src=" attribute links images-->
+    <p>This page covers common image formats, but you may also be looking for <a href='links.html'>links</a> and <a href='misc/extras.html'>useful extras</a>.</p>
+
+    <h2>JPGs</h2>
+    <p>JPG images are good for photos.</p>
+    <img src='images/mochi.jpg'/>
+    <!--JPGs has pretty good color palette, but are small file sizes, so your site can load faster.-->
+    <!--These have white boxes behind them-->
+
+    <h2>GIFs</h2>
+    <p>GIF images are good for animation.</p>
+    <img src='images/mochi.gif'/>
+
+    <h2>PNGs</h2>
+    <p>PNG images are good for diagrams and icons.</p>
+    <img src='images/mochi.png'/>
+    <!--PNGs have more color palette options, but are bigger files than JPGs.-->
+    <!--These have transparent pixels behind them-->
+
+    <h2>SVGs</h2>
+    <p>SVG images <em>amazing</em>. Use them wherever you can. </p>
+    <img src='images/mochi.svg'/>
+    <!--These scale up and down without losing quality-->
+    <!--If image contains a lot of text, this can have a big impact on file size-->
+
+    <h2>Dimensions</h2>
+
+    <!--JPG, GIF, and PNG images are pixel-based image formats, and need to be twice as big as you want them to apear on retina displays-->
+
+    <img src='images/mochi.jpg' width='75'/>
+    <img src='images/mochi.gif' width='75'/>
+    <img src='images/mochi.png' width='75'/>
+    <!--We are converting them from being 150x150 pixels to 75x75 pixels-->
+
+    <h2>Text Alternatives</h2>
+    <!--Add descriptions to pictures: helps search editors and anyone using text-to-speech software-->
+
+    <img src='images/mochi.jpg' width='75' alt='A mochi ball in a bubble'/>
+    <img src='images/mochi.gif' width='75' alt='A dancing mochi ball'/>
+    <img src='images/mochi.png' width='75' alt='A mochi ball'/>
+    <img src='images/mochi.svg' alt='A mochi ball with Bézier handles'/>
+
+
+
+
+
+  </body>
+</html>

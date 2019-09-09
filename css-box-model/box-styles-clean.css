@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*Different browsers all have different default styles; this code overrides the styles using the  "universal" CSS selector (*)*/
+  /*All the boxes are also converted to border-box (borders and padding included in the box sizing, best practice)*/
+}
+
+h1, p {
+  background-color: #DDE0E3; /*Light gray*/
+}
+
+em, strong {
+  background-color: #B2D6FF; /*Light blue*/
+  display: inline;
+  /*This is the default for em and strong*/
+}
+
+h1 {
+  padding: 50px;
+  border-bottom: 1px solid #5D6063; /*gray*/
+  /*For the border: define the stroke width, the style, then the color*/
+}
+
+p {
+  padding: 20px 0 20px 10px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+strong {
+  margin: 50px
+  /*Inline boxes completely ignore the top and bottom margins of an element
+  This is NOT the case for padding
+  If you want to play with the vertical space of a page, you must be working with block-level elements (remember can change an inline element to a block)*/
+}
+
+body {
+  text-align: center;
+}
+/*This only aligns the text in the block boxes, not the boxes themselves
+The <div> box is still left-aligned*/
+
+div{
+  color:#FFF;
+  background-color: #4A90E2;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid #5D6063;
+  border-radius:5px;
+
+  width: 200px;
+  box-sizing: border-box;
+  margin: 20px auto;
+}
+/*The auto margin automaticlly centers the buttons (only works with blocks that have explicit width defined)*/
+
+/* Takeaways:
+  Everything is a box.
+  Boxes can be inline or block-level.
+  Boxes have content, padding, borders, and margins.
+  They also have seemingly arbitrary rules about how they interact.
+  Mastering the CSS box model means you can lay out most web pages.
+*/
